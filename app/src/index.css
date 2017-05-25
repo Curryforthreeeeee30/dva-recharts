@@ -1,0 +1,12 @@
+
+html, body, :global(#root) {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑",STHeiti,MingLiu,sans-serif;
+}
+
+:global(.ant-pagination) {
+  margin: 20px auto;
+}
+
