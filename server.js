@@ -94,6 +94,7 @@ function readOrwrite(file, beginTime, endTime) {
     const line = item.trim();
     if (line.length === 0) return;
     const str = line.split(/\s+/);
+    if (str[1] % 8 !== 0) return;
     output.map(value => {
       if (str[4] >= value.start && str[4] <= value.end) {
         if (str[3] % 2 === 0) {
