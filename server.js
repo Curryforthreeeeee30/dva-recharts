@@ -46,8 +46,9 @@ function allTraces(file) {
   fileLines.map(item => {
     const line = item.trim();
     if (line.length === 0) return;
-    lineCount++;
     const str = line.split(/\s+/);
+    if (str[1] % 8 !== 0) return;
+    lineCount++;
     if (str[3] % 2 === 0) {
       //read
       readCount++;
